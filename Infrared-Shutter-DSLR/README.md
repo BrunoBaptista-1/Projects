@@ -1,1 +1,3 @@
-Infrared Shutter for DSLR build
+When taking pictures through a telescope, you want to insert as little vibration as possible. In cases of telescopes with smaller focal lengths, which usually results in a greater field of view, such vibrations are less noticeable. However, in cases with telescope with high focal lengths (e.g. 1200mm), each movement is amplified and image shifts due to vibrations are also more noticeable, so we want to minimize these occurrences.
+
+Thus, for a simple manual telescope and a mirrorless DSLR camera, the objetive was to create a device that, could utilize the DSLR's infrared receiver in its favor, beig able to take pictures with a press of a button, without touching the camera or the telescope.
