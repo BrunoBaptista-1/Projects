@@ -1,7 +1,13 @@
 When taking pictures through a telescope, you want to insert as little vibration as possible. In cases of telescopes with smaller focal lengths, which usually results in a greater field of view, such vibrations are less noticeable. 
 However, in cases with telescope with high focal lengths (e.g. 1200mm), each movement is amplified and image shifts due to vibrations are also more noticeable, so we want to minimize these occurrences.
 
-Thus, for a simple manual telescope and a mirrorless DSLR camera, the objective was to create a device that, could utilize the DSLR's infrared receiver in its favor, being able to take pictures with a press of a button, without touching the camera or the telescope.
+![Camera-attached](https://github.com/user-attachments/assets/817d3fc1-dbe1-4f96-8ad5-55eaaf822eb8)
+
+
+Thus, for a simple manual telescope and a mirrorless DSLR camera configuration, the objective was to create a device that, could utilize the DSLR's infrared receiver in its favor, being able to take pictures with a press of a button without touching the camera or the telescope.
+
+![DSLR](https://github.com/user-attachments/assets/cf5d9168-9e92-4f69-a231-2fc151e74d6e)
+
 
 **Build Materials**
 
