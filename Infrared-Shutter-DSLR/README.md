@@ -14,9 +14,11 @@ Thus, for a simple manual telescope and a mirrorless DSLR camera, the objective 
 - 1k Resistor (3x)
 - 330 Ohm Resistor
 
-
 A simple wiring diagram is shown below, showcasing how it was assembled:
-  <img width="380" height="340" alt="DSLR-Shutter-Circuit" src="https://github.com/user-attachments/assets/a3266ac9-dcac-4356-afd1-4cade10a6103" />
+
+
+<img width="380" height="340" alt="DSLR-Shutter-Circuit" src="https://github.com/user-attachments/assets/6c80d184-cc23-475b-81ba-7fe122856b8e" />
+
 
 
 In order to create the command pulse to take the photo, we would first need to analyze the commercially available ML-L3 remote shutter, to which will be recreated with the arduino nano. In order to do this, the arduino  needed to generate a 38kHz infrared carrier frequency, which is found in infrared remotes, performed by the "takePicture" Function. This replicates the signal needed for the DSLR to take the picture, with a press of the button.
