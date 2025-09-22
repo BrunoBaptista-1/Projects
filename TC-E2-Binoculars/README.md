@@ -9,5 +9,11 @@ With a set of old 2x Teleconverters from an old camera lying around, it is possi
 - M4 Screw
 - M4 Nut
 - Camera Strap
+- PLA-CF Filament
 
+Link for the case build: https://cad.onshape.com/documents/409d942052b679ab91ddafcf/w/4f071612938bcd404808ffa9/e/fbb9f8728eddee2a4ff2f4d7?renderMode=0&uiState=68d1d6ba6d67a2659a5aa336
+
+Final result
   (insert image here)
+
+
