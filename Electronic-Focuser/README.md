@@ -1,34 +1,47 @@
-A dobsonian telescope is an alt-azimuthal telescope, which in simpler terms translates to up-down, left-right movements. Although this makes controlling the telescope in a very intuitive manner, by pushing/pulling the scope with your hands to a determined position until it reaches the target, this is generally acceptable in lower magnifications. Once you want to observe a target that requires high magnification, say by 300x, every minor adjustment can make your target slip out of view.
-Even more so, manual alt-azimuthal telescopes are not designed for astro-photography, since these "hand-made" adjustments result in burred images due to poor tracking. So, there comes a desire to always maintain a target in frame when taking long exposures photographs, by making the desired target to always stay centered by rotating the telescope in a way that counteracts the earth's rotation. Thus, there comes my attempt at building an equatorial platform.
+When performing visual observations on a telescope, after inserting your desired eyepiece, you generally adjust a focuser's knobs, rotating them up or down, in order to reach focus. This is especially intuitive to adjust when putting your eye close to the eyepiece, but in situations where you want to perform remote adjustments or doing small adjustments when using a camera for fine-tuning the focus, a slight erratic hand movement can slightly remove your desired target out of frame. 
+Thus, a desire to create an electric focuser was created, one that could be controlled through a serial terminal via a Bluetooth connection.
 
-The principle behind it is somewhat simple. This platform consists of two parts, a top board and a ground board, where the first will rest upon. It's axis of rotation is parallel to the earth's polar axis, thus being equatorially mounted. From where I usually perform observations, I have set the pivoting axis to a 40 degrees, since these locations stay approximately within the 40 degrees latitude.
+By repurposing a powerbank's 18650 Li-Ion battery pack, this could be used to power an ESP32 and also deliver power to a stepper motor driver at the same time. Since I would still like to revert back to fully-manual focusing adjustments, I had to figure out a way to implement a non-permanent solution by creating an adapter to the existing focuser, that could connect to the stepper motor. I figured that, having previously created a removable Tube-Ring in older projects, I could implement a motor outer casing that could attach to it, and could attach a timing belt and pulley system to perform adjustments to the focuser.
 
+Regarding it's electronic features, I would like to be able to charge the battery pack through a type-C connector without opening the case, thus creating a permanent solution. Given that the battery pack's output voltage varies depending on battery capacity, i.e. the voltage is not stable for power delivery, I would also need an additional circuit to deliver a stable output voltage. Regarding it's remote control capabilities, the chosen ESP32 has built-in Bluetooth, so this device was ideal for this purpose. However, since I would like to keep the case as contained (unopened) as possible, I would also need a way to be able to implement a pairing feature, and a way to erase existing connections, so it could pair with new devices.  
 
+**Materials**
+- 18650 Li-Ion battery pack (2x, connected in parallel)
+- 28byj-48 stepper motor
+- 28byj-48 stepper motor driver
+- ESP32
+- TC4056 Type-C USB-C 5V 1A 18650 Lithium Battery Charger Board with Dual Protection Functions
+- MT3608 DC-DC Power Adapter Step Up Module
+- Timing belt with pulleys (20 teeth, 5mm)
 
-**Platform Materials**
-- 15mm Plywood
-- ASA Filament, for the North and South Segments and for the roller bearing supports
-- Nema 17 Stepper Motor L=39mm Gear Ratio 50:1 High Precision Planetary Gearbox
-- 8mm to 8mm Shaft coupler
-- TMC2209 stepper motor driver
-- 8mm solid stainless steel tubes
-- 12V 7A Battery Unit
-- Round Spirit Leveler, for adjusting the platform by rotating its rubberized feet
-- Compass for Polar Alignment
-- In the black box, there is an Arduino Uno connected to the stepper motor driver, which everything is powered through a single battery unit
-  - 6 Functional Buttons: "Manual Start/Stop" button, "Enter/Apply Settings" button, Decrease and Increase speed increment buttons (Adjusting speed in order of magnitudes of 1, 10 or 100) , and for the final two buttons I can increase or lower the speed being applied.
-  - LCD Display, from which I can observe the tracking status, and see the configured speed being applied.
-  - A switch for powering on/off the LCD backlight, so I can observe without light emission from the display.
-  - Another switch for powering on/off a 5V dc Fan, for cooling the arduino and the stepper motor driver inside.
-  - End stop in front of the box, where the top platform will hit and thus ending the tracking process, coming to a stop so it can be manually reset and begin tracking.
-  - A battery percentage indicator
-  - 220nF Capacitor for battery decoupling mechanism
- 
+Case Design:
+
+<img width="553" height="533" alt="Focuser-1" src="https://github.com/user-attachments/assets/30638623-3ab5-40f7-ba5b-cc4ea2e6bbc4" />
+
+<img width="631" height="533" alt="Focuser-2" src="https://github.com/user-attachments/assets/cab684a6-f7f3-4cfb-ad11-c3fe63353751" />
+
+<img width="631" height="533" alt="Focuser-3" src="https://github.com/user-attachments/assets/3771f7c8-a99e-46fc-947d-4c85355eeb0a" />
 
 
-![eq-1](https://github.com/user-attachments/assets/a33559cc-e56b-469a-b295-a68be322b457)
-![eq-2](https://github.com/user-attachments/assets/86a68d73-5a15-4989-a44b-4606af4d21b3)
-![eq-3](https://github.com/user-attachments/assets/52d116d9-d700-47d7-bc3d-88154c23ee43)
-![eq-4](https://github.com/user-attachments/assets/6e2b6ee3-3794-4c23-90c6-80e23f9d329f)
+Focuser Adapter Design:
 
+<img width="660" height="437" alt="Focuser-Adapter-1" src="https://github.com/user-attachments/assets/fdc9f29b-6e10-4e9c-916e-0bc878feb34a" />
+
+<img width="660" height="406" alt="Focuser-Adapter-2" src="https://github.com/user-attachments/assets/fb3717ff-76c8-4cc9-8410-b5e6c906aced" />
+
+
+
+Regarding the design of this adapter, since there were no mounting holes, I had to devise a way to connect to the existing focuser wheel. Thus, this "revolver-style" adapter was made, where bolts could be screwed from one side to the other, providing stability and could easily be removable
+
+
+Electronic Circuit Diagram:
+-
+
+
+Final Result:
+
+![Focuser-Final-1](https://github.com/user-attachments/assets/31406a1b-c3e8-4c03-92c5-0e930acca3f8)
+
+
+![Focuser-Final-2](https://github.com/user-attachments/assets/e61dba87-2f47-43ac-97f5-34a2ba95cecb)
 
