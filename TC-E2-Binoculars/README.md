@@ -14,6 +14,10 @@ With a set of old 2x Teleconverters from an old camera lying around, it is possi
 Link for the case build: https://cad.onshape.com/documents/409d942052b679ab91ddafcf/w/4f071612938bcd404808ffa9/e/fbb9f8728eddee2a4ff2f4d7?renderMode=0&uiState=68d1d6ba6d67a2659a5aa336
 
 Final result
-  (insert image here)
+  ![TC-E2-1](https://github.com/user-attachments/assets/b0789515-35e2-4bc7-86af-54e18e6f9896)
+  ![TC-E2-2](https://github.com/user-attachments/assets/66739550-a6b7-41f6-aa37-72da33355cdd)
+  ![TC-E2-3](https://github.com/user-attachments/assets/6c02ba7f-2d6e-47ca-ad7f-43a75d8a654f)
+  ![TC-E2-4](https://github.com/user-attachments/assets/c16b07fe-287a-4894-a846-3c52eea3c38a)
+
 
 
