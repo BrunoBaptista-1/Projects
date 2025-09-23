@@ -28,3 +28,9 @@ A simple wiring diagram is shown below, showcasing how it was assembled:
 
 
 In order to create the command pulse to take the photo, we would first need to analyze the commercially available ML-L3 remote shutter, to which will be recreated with the arduino nano. In order to do this, the arduino  needed to generate a 38kHz infrared carrier frequency, which is found in infrared remotes, performed by the "takePicture" Function. This replicates the signal needed for the DSLR to take the picture, with a press of the button.
+
+
+
+Final Design:
+
+![Remote-Shutter](https://github.com/user-attachments/assets/3165e277-dfc0-4376-a326-d54fc4920288)
