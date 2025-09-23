@@ -8,3 +8,4 @@ Future Project Highlights:
 - Autonomous/Remotely Controlled Submarine through ArduSub
 - Using Meshtastic Network to develop an off-grid pet tracker that does not require any monthly subscriptions
 - Motorized Antenna for Satellite tracking  w/ RTL-SDR and Raspberry Pi
+- Attempting Tripoli L1 Rocketry Certification
