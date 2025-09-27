@@ -4,8 +4,13 @@ Since I had no access to a large 3D printer, the tube ring was split into 4 sect
 
 CAD Design:
 
+Link for the design - https://cad.onshape.com/documents/41fa12f2298e011cad0a631d/w/82332ee41bc3674982ee94a0/e/9d50e61bb6b27394d3c47e04
+
 <img width="953" height="721" alt="Tube-Ring-1" src="https://github.com/user-attachments/assets/eb12abd7-3516-44c7-b659-de50b89ddfee" />
 
 <img width="953" height="608" alt="Tube-Ring-2" src="https://github.com/user-attachments/assets/6154dedc-65c0-4c9c-b1a8-2e61b6631080" />
 
 The finder base was implemented in one of the sections, so it could allow for more attachments on the OTA. On the side, a 40mm M5 Threaded bolt is set to close the clamp mechanism, ensuring a proper fit.
+
+
+
