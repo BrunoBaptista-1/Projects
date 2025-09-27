@@ -46,3 +46,11 @@ Final Result:
 
 ![Focuser-Final-2](https://github.com/user-attachments/assets/e61dba87-2f47-43ac-97f5-34a2ba95cecb)
 
+
+
+**Future Improvements**
+Instead of recurring to a timing belt system, a 5mm to 5mm coupler would be the ideal choice, since it would also be easily removable and it would not rely on belt tensioning for better surface adhesion.
+Regarding this improvement, no perpendicular forces would be applied to the rotational axis of the stepper motor, such is the case with the belt tensioning system, thus reducing wear and improving longevity.
+For this, It would need a complete design overhaul for both the electronic focuser case, and for the tube ring section that locks the electronics in place, lowering the rotational axis to its ideal height.  
+
+An additional improvement could be the addition of an external temperature sensor, regarding temperature compensation during observations, given by the thermal expansion of the Optical Tube Assembly, more specifically its mirrors and metal components, which result in image degradation caused by shifting the focus out of position.
