@@ -35,7 +35,8 @@ Regarding the design of this adapter, since there were no mounting holes, I had 
 
 
 Electronic Circuit Diagram:
--
+<img width="1020" height="320" alt="circuit" src="https://github.com/user-attachments/assets/3b803f7f-7f0f-476a-bb69-b70ebdf473fd" />
+
 
 
 Final Result:
