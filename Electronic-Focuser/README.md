@@ -49,6 +49,7 @@ Final Result:
 
 
 **Future Improvements**
+
 Instead of recurring to a timing belt system, a 5mm to 5mm coupler would be the ideal choice, since it would also be easily removable and it would not rely on belt tensioning for better surface adhesion.
 Regarding this improvement, no perpendicular forces would be applied to the rotational axis of the stepper motor, such is the case with the belt tensioning system, thus reducing wear and improving longevity.
 For this, It would need a complete design overhaul for both the electronic focuser case, and for the tube ring section that locks the electronics in place, lowering the rotational axis to its ideal height.  
