@@ -7,7 +7,7 @@
 #endif
 
 
-const int stepsPerRevolution = 2048;  // number of steps per revolution
+const int stepsPerRevolution = 2048;  // change this to fit the number of steps per revolution
 
 // ULN2003 Motor Driver Pins
 #define IN1 19
@@ -47,43 +47,23 @@ void setup() {
   
 }
 
+int calculate_steps(float millimeters){ //calculate, for given millimeters of travel, the necessary steps for the motor 
+  return round((stepsPerRevolution * millimeters)/12.5);
+}
+
 void loop() {
 
   if (SerialBT.available()) {
 
-    int value = SerialBT.read();
+    float distance = SerialBT.parseFloat(); //parses float values from serial input
 
-    if(value == '0' ){ //for value 0, the motor does a step backwards
-      myStepper.step(-50);
+    if(distance != 0.0){  //If parsed value is different from 0, then the stepper motor moves
+      myStepper.step(calculate_steps(distance));
       delay(1000);
     }
-    else if(value == '1' ){ //for value 1, the motor does a medium step backwards
-      myStepper.step(-250);
-      delay(1000);
-    }
-    else if(value == '2' ){ //for value 2, the motor does a full revolution backwards
-      myStepper.step(-stepsPerRevolution);
-      delay(1000);
-    }
-
-
-  
-    else if(value == '3' ){ //for value 3, the motor does a step forward
-      myStepper.step(50);
-      delay(1000);
-    }
-    else if(value == '4' ){ //for value 4, the motor does a medium step forward
-      myStepper.step(250);
-      delay(1000);
-    }
-    else if (value == '5'){ //for value 5, the motor does a full revolution forward
-      myStepper.step(stepsPerRevolution);
-      delay(1000);
-    }
+    
   }
   delay(20);
-
-
 
   
   //Button Press detection
