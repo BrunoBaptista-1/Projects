@@ -25,20 +25,20 @@ LiquidCrystal lcd(13, 12, 10, 9, 7, 6);
 
 
 //---------------VARIABLES-----------------
-int start = 0;          //button that helps control start/stop functionality
-int end_of_track = 0;   //button that indicates that tracking plate has finished tracking
+int start = 0;          //helps control start/stop functionality
+int end_of_track = 0;   //indicates that tracking plate has finished tracking
 //int begin_of_track = 0; //button that indicates that the plate has finished reset and returned to initial position
 int enabled = 0;        //control variable for start/stop functionality
 
-int config_button = 0;  ///////////
-int mode_speed = 1;     ///////
+int config_button = 0;  
+int mode_speed = 1;     // Initial mode speed to be displayed on screen
 
 bool was_pressed = false;           //boolean variable for start/stop feature, to call response functions without delay
 bool reached_track_limit = false;   //variable for reaching track limit, to reverse
 bool is_reversing = false;          //variable that will show the current track state when resuming tracking
 
-bool configure_speed = false; ///////
-bool settings = false;        ///////
+bool configure_speed = false; 
+bool settings = false;       
 bool update_speed_up = false;
 bool update_speed_down = false;
 bool update_mode_up = false;
@@ -48,8 +48,8 @@ unsigned long millis_timer, update_state_timer, config_timer;
 unsigned long lcd_settings_timer, speed_up_timer, speed_down_timer, mode_up_timer, mode_down_timer;
 int button_delay = 300;
 
-int tracking_speed = 150;
-int reverse_speed = -2000;
+int tracking_speed = 110; // Inital tracking speed, fine tuned for my equatorial platform so only minimal changes are required, if needed
+int reverse_speed = -2000; //Unused in current configuration
 int temp_speed = 0;
 //------------------------------------------
 
@@ -62,7 +62,7 @@ void tracking(){
 
 }
 
-void reverse(){
+void reverse(){ //No longer used, given its track/stop configuration
   
   stepper01.setSpeed(reverse_speed);
   is_reversing = true;
