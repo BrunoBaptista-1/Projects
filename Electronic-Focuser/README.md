@@ -14,7 +14,7 @@ Regarding it's electronic features, I would like to be able to charge the batter
 - MT3608 DC-DC Power Adapter Step Up Module
 - Timing belt with pulleys (20 teeth, 5mm)
 
-Case Design:
+**Case Design**
 
 <img width="553" height="533" alt="Focuser-1" src="https://github.com/user-attachments/assets/30638623-3ab5-40f7-ba5b-cc4ea2e6bbc4" />
 
@@ -23,7 +23,7 @@ Case Design:
 <img width="631" height="533" alt="Focuser-3" src="https://github.com/user-attachments/assets/3771f7c8-a99e-46fc-947d-4c85355eeb0a" />
 
 
-Focuser Adapter Design:
+**Focuser Adapter Design**
 
 <img width="660" height="437" alt="Focuser-Adapter-1" src="https://github.com/user-attachments/assets/fdc9f29b-6e10-4e9c-916e-0bc878feb34a" />
 
@@ -34,12 +34,20 @@ Focuser Adapter Design:
 Regarding the design of this adapter, since there were no mounting holes, I had to devise a way to connect to the existing focuser wheel. Thus, this "revolver-style" adapter was made, where bolts could be screwed from one side to the other, providing stability and could easily be removable
 
 
-Electronic Circuit Diagram:
+**Electronic Circuit Diagram**
 <img width="1020" height="320" alt="circuit" src="https://github.com/user-attachments/assets/3b803f7f-7f0f-476a-bb69-b70ebdf473fd" />
 
 
 
-Final Result:
+**Motor Communication**
+
+Given that the ESP32 has built-in bluetooth features, we can use Serial Communication to interact with the microcontroller, giving it how many millimeters we want the focuser to move. Regarding communication with mobile devices, we can use the "Serial Terminal Emulator" App.
+When communicating with desktop applications, we can use PuTTY to establish a connection and send commands:
+
+<img width="901" height="446" alt="Putty Configurations" src="https://github.com/user-attachments/assets/edbdf8b6-fe4f-4292-886b-38adea6c83bb" />
+
+
+**Final Result**
 
 ![Focuser-Final-1](https://github.com/user-attachments/assets/31406a1b-c3e8-4c03-92c5-0e930acca3f8)
 
