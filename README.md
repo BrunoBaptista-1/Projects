@@ -1,4 +1,4 @@
-Welcome to my archive of personal projects, showcasing my passion for Space and Engineering.
-In this repository, each project is separated onto each folder, where a detailed ReadMe of each build is written on separate files, according to each project, for better cohesion. 
+This archive of personal projects is focused on several iniciatives that demonstrate my passion for Space and Engineering.
+In this centralized repository, each project is contained within its dedicated directory, where a README file is accompanied for every build.
 
-Highlights: Equatorial-Platform, Electronic-Focuser... 
+Note: This archive is subject to continuous integration. Project files are systematically updated, reflecting improvements on existing or transitioning into new projects 
